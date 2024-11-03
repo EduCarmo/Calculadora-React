@@ -74,9 +74,9 @@ const Calculadora = () => {
                     label={label}
                     onClick={
                         label === "AC" ? handleClearMemory :
-                        !isNaN(label) || label === "." ? () => handleAddDigit(label) :
-                        ["+", "-", "*", "/", "="].includes(label) ? () => handleSetOperation(label) :
-                        undefined
+                            !isNaN(label) || label === "." ? () => handleAddDigit(label) :
+                                ["+", "-", "*", "/", "="].includes(label) ? () => handleSetOperation(label) :
+                                    undefined
                     }
                 />
             ))}
